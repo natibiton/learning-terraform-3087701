@@ -32,7 +32,7 @@ resource "aws_instance" "blog" {
 module "blog_sg" { # From the registery of Terraform
   source  = "terraform-aws-modules/security-group/aws"
   version = "5.1.0"
-  name = "blog_new"
+  name = "blog"
 
   vpc_id = data.aws_vpc.default.id  # Reference to the above definition of the aws_vpc
 
